@@ -4,10 +4,10 @@ import { Separator } from "@/components/ui/separator";
 
 export default function AboutPage() {
     return (
-        <main className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12 transition-colors duration-300">
-            <div className="container mx-auto px-4">
+        <div className="bg-gray-50 dark:bg-gray-900 py-12">
+            <div className="px-4 text-center">
                 <h1
-                    className="text-4xl font-bold mb-4"
+                    className="text-4xl  font-bold mb-4"
                 >
                     Sobre Raíces Vivas
                 </h1>
@@ -76,8 +76,10 @@ export default function AboutPage() {
                     Soy Analiz Justiniano Steinbach, periodista con más de 20 años de experiencia in varios tipos de investigaciones. He trabajado en una revista de renombre hasta que descubrí la genealogía que cambió mi vida. Gracias a mi conocimiento y a mi equipo, he tenido el honor de poder ayudar a más de 50 familias y profesionales a conocer sus orígenes y mejorar sus vidas en varios aspectos.
                 </p>
 
-                <CallToAction />
+                <div className="container flex max-w-screen-sm mx-auto">
+                    <CallToAction />
+                </div>
             </div>
-        </main>
+        </div>
     );
 }

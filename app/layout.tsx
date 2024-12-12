@@ -1,11 +1,10 @@
-import React from 'react';
-import { ThemeProvider } from '@/components/theme/theme-provider';
-import { Inter, Merriweather } from 'next/font/google';
-import { cn } from '@/lib/utils';
-import { DESIGN_SYSTEM } from './lib/constants';
-import "./globals.css";
-import { Navbar } from '@/components/navbar/navbar';
 import Footer from '@/components/footer/footer';
+import { Navbar } from '@/components/navbar/navbar';
+import { ThemeProvider } from '@/components/theme/theme-provider';
+import { cn } from '@/lib/utils';
+import { Inter, Merriweather } from 'next/font/google';
+import React from 'react';
+import "./globals.css";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -29,7 +28,6 @@ export default function RootLayout({
         className={cn(
           inter.variable,
           merriweather.variable,
-          'flex flex-col mx-auto w-full mt-auto min-h-screen'
         )}
       >
         <ThemeProvider
@@ -38,15 +36,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main style={{
-            fontFamily: DESIGN_SYSTEM.typography.fontFamily.primary,
-            backgroundColor: 'var(--background)',
-            color: 'var(--foreground)'
-          }}>
-            <Navbar />
-            {children}
-            <Footer />
-          </main>
+          <Navbar />
+          {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

@@ -20,21 +20,20 @@ export default function Home() {
         <h1
           className="text-5xl font-extrabold tracking-tight text-red-500"
         >
-          Raíces Vivas
+          Descubre tus raíces, conecta con tu historia.
         </h1>
       </header>
 
       {/* Hero Section */}
-      <div className="grid md:grid-cols-2 gap-8 items-center">
+      <div className="grid md:grid-cols-2 gap-8 items-center pb-16">
         <div>
           <h2
             className="text-4xl font-semibold mb-4"
           >
-            Descubra su historia familiar
+            Construye un árbol genealógico y preserva el legado familiar con nuestra ayuda experta.
           </h2>
           <p className="mb-6 text-lg text-gray-600">
-            Descubra generaciones de historia familiar, conéctese con familiares y
-            preserve el legado de su familia.
+            Explora generaciones de historia familiar, conecta con seres queridos y protege el legado de tu familia para las próximas generaciones.
           </p>
           <div className="flex gap-4">
             <Button
@@ -42,10 +41,10 @@ export default function Home() {
               className="bg-gradient-to-r from-blue-500 to-green-400 text-white hover:opacity-90 transition"
               aria-label="Start Exploring"
             >
-              <Link href={'/comenzar'}>Comenzar</Link>
+              <Link href={'/comenzar'}>Empieza tu Árbol Familiar</Link>
             </Button>
             <Button variant="outline" className="border-gray-300 text-gray-700" >
-              <Link href={'/nosotros'}>Aprender más</Link>
+              <Link href={'/nosotros'}>Conoce más</Link>
             </Button>
           </div>
         </div>
@@ -55,8 +54,8 @@ export default function Home() {
       </div>
 
       {/* Features Section */}
-      <section className="mt-16">
-        <h3 className="text-3xl text-center font-bold mb-8">
+      <section className="py-16">
+        <h3 className="text-4xl text-center font-bold mb-8">
           ¿Por qué elegirnos?
         </h3>
         <div className="grid md:grid-cols-3 gap-6">

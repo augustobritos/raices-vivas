@@ -8,17 +8,17 @@ export const features = [
     {
         icon: <Search strokeWidth={1.5} size={36} />,
         title: "Investigación",
-        description: "Tenemos Experiencia del Mundo Real para llevar a cabo Investigaciones Extensas.",
+        description: "Contamos con años de experiencia investigativa para rastrear tus raíces familiares con precisión y profundidad.",
     },
     {
         icon: <BookOpen strokeWidth={1.5} size={36} />,
-        title: "Herramientas Avanzas de Investigación",
-        description: " Investigación Genealógica Profunda con Bases de Datos Exclusivas.",
+        title: "Bases de Datos Exclusivas",
+        description: "Acceso a bases de datos globales exclusivas y herramientas avanzadas para crear tu árbol genealógico.",
     },
     {
         icon: <Users strokeWidth={1.5} size={36} />,
         title: "Conéctese con familiares",
-        description: "Descubra y colabore con familiares lejanos.",
+        description: "Reconecta y colabora con familiares lejanos.",
     },
 ];
 
