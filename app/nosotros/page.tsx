@@ -1,6 +1,5 @@
 import { CallToAction } from "@/components/cta/cta";
 
-import { DESIGN_SYSTEM } from "../lib/constants";
 import { Separator } from "@/components/ui/separator";
 
 export default function AboutPage() {
