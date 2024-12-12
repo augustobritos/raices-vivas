@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 import { DESIGN_SYSTEM } from './lib/constants';
 import "./globals.css";
 import { Navbar } from '@/components/navbar/navbar';
+import Footer from '@/components/footer/footer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -28,7 +29,7 @@ export default function RootLayout({
         className={cn(
           inter.variable,
           merriweather.variable,
-          'min-h-screen bg-background antialiased'
+          'flex flex-col mx-auto w-full mt-auto min-h-screen'
         )}
       >
         <ThemeProvider
@@ -44,6 +45,7 @@ export default function RootLayout({
           }}>
             <Navbar />
             {children}
+            <Footer />
           </main>
         </ThemeProvider>
       </body>

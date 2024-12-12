@@ -11,30 +11,8 @@ export default function Footer() {
                             color: DESIGN_SYSTEM.colors.secondary.light
                         }}
                     >
-                        &copy; 2023 FamilyRoots. All rights reserved.
+                        &copy; 2024 Raices Vivas. Todos los derechos reservados.
                     </p>
-                    <div className="flex space-x-4">
-                        <a
-                            href="#"
-                            className="hover:text-primary-light transition-colors"
-                            style={{
-                                color: DESIGN_SYSTEM.colors.secondary.light,
-                                fontSize: DESIGN_SYSTEM.typography.sizes.small
-                            }}
-                        >
-                            Privacy Policy
-                        </a>
-                        <a
-                            href="#"
-                            className="hover:text-primary-light transition-colors"
-                            style={{
-                                color: DESIGN_SYSTEM.colors.secondary.light,
-                                fontSize: DESIGN_SYSTEM.typography.sizes.small
-                            }}
-                        >
-                            Terms of Service
-                        </a>
-                    </div>
                 </div>
             </div>
         </footer>

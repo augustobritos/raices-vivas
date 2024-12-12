@@ -1,15 +1,14 @@
 "use client";
 
-import { Faq } from "@/components/faq/faq";
-import Footer from "@/components/footer/footer";
-import { ModeToggle } from "@/components/mode-toggle";
+import Link from "next/link";
+
+import { features } from "@/config/data";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { features } from "@/config/data";
 import {
   TreePine
 } from "lucide-react";
-import Link from "next/link";
 
 export default function Home() {
 
@@ -30,12 +29,8 @@ export default function Home() {
         <div>
           <h2
             className="text-4xl font-semibold mb-4"
-            style={{
-              fontFamily: "Merriweather, serif",
-              lineHeight: 1.4,
-            }}
           >
-            Descubra Su Historia Familiar
+            Descubra su historia familiar
           </h2>
           <p className="mb-6 text-lg text-gray-600">
             Descubra generaciones de historia familiar, conéctese con familiares y
@@ -55,7 +50,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center">
-          <TreePine size={250} strokeWidth={1.5} className="text-gray-400" />
+          <TreePine size={250} strokeWidth={1.5} className="text-green-400" />
         </div>
       </div>
 
@@ -85,9 +80,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      <Faq />
-      <Footer />
     </div>
 
   );
